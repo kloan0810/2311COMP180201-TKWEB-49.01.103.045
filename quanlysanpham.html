@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Quản lý sản phẩm
+        
+        </h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Số thứ tự</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Áo Baby Tee </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(1)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(1)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Áo croptop </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(2)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(2)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Áo Babydoll </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(3)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(3)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Đầm</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(4)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(4)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Quần ống suông</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(5)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(5)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Quần ống loe</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(6)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(6)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Quần jean </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(7)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(7)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Chân váy</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(😎">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(😎">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Hoodie</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(9)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(9)">Sửa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Balo</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProduct(10)">Xóa</button>
+                        <button class="btn btn-primary btn-sm" onclick="editProduct(10)">Sửa</button>
+                    </td>
+
+        
+                <!-- Thêm các hàng khác cho các sản phẩm khác -->
+            </tbody>
+        </table>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Thêm sản phẩm mới" id="newProduct">
+            <div class="input-group-append">
+                <button class="btn btn-success" onclick="addProduct()">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function deleteProduct(productId) {
+            // Thực hiện logic xóa ở đây
+            console.log("Xóa sản phẩm có ID: " + productId);
+        }
+
+        function editProduct(productId) {
+            // Thực hiện logic sửa ở đây
+            console.log("Sửa sản phẩm có ID: " + productId);
+        }
+
+        function addProduct() {
+            const newProductName = document.getElementById("newProduct").value;
+            // Thực hiện logic thêm ở đây
+            console.log("Thêm sản phẩm mới: " + newProductName);
+        }
+    </script>
+</body>
+</html>
